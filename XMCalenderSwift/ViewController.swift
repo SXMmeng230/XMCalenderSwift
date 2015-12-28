@@ -17,27 +17,22 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         title = "日历选择"
         xmCalender = XMCalenderView(frame: CGRectMake(0,150,self.view.bounds.width,300))
+        //代理
 //        xmCalender.delegate = self
         xmCalender.isSwipe = true
         xmCalender.backgroundColor = UIColor.lightGrayColor()
+        //闭包
+        xmCalender.showChangeDateClosure { [weak self] (dateClo) -> Void in
+            self!.dateLabel.text = dateClo.timeStrForDate()
+        }
         self.view.addSubview(xmCalender)
     }
 
     @IBAction func preMonth(sender: UIButton) {
-        //闭包
-        xmCalender.showChangeDateClosure(.rightCalender) { [weak self] (dateClo) -> Void in
-            self!.dateLabel.text = dateClo.timeStrForDate()
-        }
-        //代理
-//        xmCalender.changeDate(.rightCalender)
+        xmCalender.changeDate(.rightCalender)
     }
     @IBAction func nextMonth(sender: UIButton) {
-        //闭包
-        xmCalender.showChangeDateClosure(.leftCalender) { [weak self] (dateClo) -> Void in
-            self!.dateLabel.text = dateClo.timeStrForDate()
-        }
-        //代理
-//        xmCalender.changeDate(.leftCalender)
+        xmCalender.changeDate(.leftCalender)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

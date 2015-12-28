@@ -24,7 +24,7 @@ class XMCalenderView: UIView {
     let btnOffWidth:CGFloat = 10.0
     let btnHeight:CGFloat = 30.0
     var seletedBtn:XMButton?
-   weak var delegate: XMCalenderViewDelegate?
+    weak var delegate: XMCalenderViewDelegate?
     var closure:XMCalenderDateClosure?
     //默认为false 不能左右滑动
     var isSwipe:Bool = false {
@@ -52,9 +52,9 @@ class XMCalenderView: UIView {
   required init?(coder aDecoder: NSCoder) {
       fatalError("init(coder:) has not been implemented")
   }
-    func showChangeDateClosure(direction:XMCalenderSwipeGesture,dateClosure:XMCalenderDateClosure){
+    //MARK: -闭包方法
+    func showChangeDateClosure(dateClosure:XMCalenderDateClosure){
         closure = dateClosure
-        self.changeDate(direction)
     }
     //MARK: - 滑动手势
     func swipe(sw:UISwipeGestureRecognizer){
