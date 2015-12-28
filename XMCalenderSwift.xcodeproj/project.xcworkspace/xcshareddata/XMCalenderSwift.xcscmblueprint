@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3321CC0EA46578D2D5523EB27B61FF83451DE500",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3321CC0EA46578D2D5523EB27B61FF83451DE500" : 0,
+    "EC326C130A125758C74FF1BFAE214B7CDA14FCCC" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C0AAB2FA-FD06-47D2-9218-013DA7C8D0FF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3321CC0EA46578D2D5523EB27B61FF83451DE500" : "XMCalenderSwift\/",
+    "EC326C130A125758C74FF1BFAE214B7CDA14FCCC" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "XMCalenderSwift",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "XMCalenderSwift.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:SXMmeng230\/XMCalenderSwift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3321CC0EA46578D2D5523EB27B61FF83451DE500"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:SXMmeng230\/CoreSpotlightTest.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EC326C130A125758C74FF1BFAE214B7CDA14FCCC"
+    }
+  ]
+}

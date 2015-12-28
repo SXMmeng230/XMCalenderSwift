@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol XMCalenderViewDelegate {
+protocol XMCalenderViewDelegate:NSObjectProtocol {
     func clickBtnDate(seletDate:NSDate)
 }
 enum XMCalenderSwipeGesture {
@@ -22,7 +22,7 @@ class XMCalenderView: UIView {
     let btnOffWidth:CGFloat = 10.0
     let btnHeight:CGFloat = 30.0
     var seletedBtn:XMButton?
-    var delegate: XMCalenderViewDelegate?
+   weak var delegate: XMCalenderViewDelegate?
     //默认为false 不能左右滑动
     var isSwipe:Bool = false {
         willSet{

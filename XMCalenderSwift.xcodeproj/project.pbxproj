@@ -492,6 +492,7 @@
 				04A3E7421C2BC727009346B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04A3E7431C2BC727009346B5 /* Build configuration list for PBXNativeTarget "XMCalenderSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +501,7 @@
 				04A3E7451C2BC727009346B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04A3E7461C2BC727009346B5 /* Build configuration list for PBXNativeTarget "XMCalenderSwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +510,7 @@
 				04A3E7481C2BC727009346B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
