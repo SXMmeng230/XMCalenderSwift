@@ -8,6 +8,8 @@
 
 import UIKit
 
+typealias XMCalenderDateClosure = (dateClo:NSDate) ->Void
+
 protocol XMCalenderViewDelegate:NSObjectProtocol {
     func clickBtnDate(seletDate:NSDate)
 }
@@ -23,6 +25,7 @@ class XMCalenderView: UIView {
     let btnHeight:CGFloat = 30.0
     var seletedBtn:XMButton?
    weak var delegate: XMCalenderViewDelegate?
+    var closure:XMCalenderDateClosure?
     //默认为false 不能左右滑动
     var isSwipe:Bool = false {
         willSet{
@@ -49,6 +52,10 @@ class XMCalenderView: UIView {
   required init?(coder aDecoder: NSCoder) {
       fatalError("init(coder:) has not been implemented")
   }
+    func showChangeDateClosure(direction:XMCalenderSwipeGesture,dateClosure:XMCalenderDateClosure){
+        closure = dateClosure
+        self.changeDate(direction)
+    }
     //MARK: - 滑动手势
     func swipe(sw:UISwipeGestureRecognizer){
         if sw.direction == .Left{
@@ -135,6 +142,9 @@ class XMCalenderView: UIView {
         let str = btn.dateForBtn?.timeStrForDate()
         if let deleBtn = delegate?.clickBtnDate(btn.dateForBtn!){
             delegate?.clickBtnDate(btn.dateForBtn!)
+        }
+        if (closure != nil) {
+            closure!(dateClo:btn.dateForBtn!)
         }
         print("\(str!)")
     }
